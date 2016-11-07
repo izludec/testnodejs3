@@ -21,7 +21,7 @@ app = app.get('/*',function (req, res) {
      //db.collection("links").remove({})
      if((!String(req.url)[req.url.length-1].match("/"))
      &&req.url.split("/")[1].match("new")){
-      res.redirect("https://testworkspace-izludec.c9users.io"+req.url+"/")
+      res.redirect("https://shortener-izludec.herokuapp.com"+req.url+"/")
      }
       db.collection("links").count({},function(err,data){
        app.count = data 
