@@ -15,7 +15,7 @@ app = app.get('/*',function (req, res) {
    //console.log('---------------------')
    var mass = []
    var count = 0
-   mongo.connect("mongodb://localhost:27017/shorts", 
+   mongo.connect("mongodb://izludec:123456789data@ds147267.mlab.com:47267/izludec", 
     function(err, db){
      if(err){console.log(err)}
      //db.collection("links").remove({})
@@ -26,7 +26,7 @@ app = app.get('/*',function (req, res) {
       db.collection("links").count({},function(err,data){
        app.count = data 
       })
-     
+    
      if(req.url.split("/")[1].match("new")){
       db.collection("links").insert({
        _id: app.count,
