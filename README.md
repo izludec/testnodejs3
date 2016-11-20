@@ -3,7 +3,7 @@ A simple url-shortener service.
 
 
 Example creation usage:
-https://shortener-izludec.herokuapp.com//new/https://www.google.com
+https://shortener-izludec.herokuapp.com/new/https://www.google.com
 
 Usage:
 https://shortener-izludec.herokuapp.com/7
